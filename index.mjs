@@ -176,7 +176,7 @@ const constructor = ((options) => {
                 return '/opt/backend-static/';
             },
             get containerAppEntrypoint() {
-                return 'node main.mjs';
+                return 'node index.mjs';
             },
             get containerAppPort() {
                 return 3000;
@@ -208,7 +208,7 @@ const constructor = ((options) => {
                 return '/opt/backend-idp/';
             },
             get containerAppEntrypoint() {
-                return 'node main.mjs';
+                return 'node index.mjs';
             },
             get containerAppPort() {
                 return 3000;
@@ -240,7 +240,7 @@ const constructor = ((options) => {
                 return '/opt/backend-api/';
             },
             get containerAppEntrypoint() {
-                return 'node main.mjs';
+                return 'node index.mjs';
             },
             get containerAppPort() {
                 return 3000;
@@ -272,7 +272,7 @@ const constructor = ((options) => {
                 return `webappuser`;
             },
             get containerAppEntrypoint() {
-                return `node main.mjs`;
+                return `node index.mjs`;
             },
             get containerAppPort() {
                 return 3000;
