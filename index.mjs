@@ -55,6 +55,9 @@ const constructor = ((options) => {
         backendStaticDirectory: hold(() => {
             return FileEntry(_self.metadata().backendStaticDirectory);
         }),
+        staticDirectory: hold(() => {
+            return FileEntry(_self.metadata().staticDirectory);
+        }),
         staticDistDirectory: hold(() => {
             return FileEntry(_self.metadata().staticDistDirectory);
         }),

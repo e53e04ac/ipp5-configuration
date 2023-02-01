@@ -24,6 +24,7 @@ export declare namespace Ipp5Configuration {
         readonly backendBatchDirectory: string;
         readonly backendIdpDirectory: string;
         readonly backendStaticDirectory: string;
+        readonly staticDirectory: string;
         readonly staticDistDirectory: string;
     };
 
@@ -45,6 +46,7 @@ export declare namespace Ipp5Configuration {
         readonly backendBatchDirectory: Get<FileEntry>;
         readonly backendIdpDirectory: Get<FileEntry>;
         readonly backendStaticDirectory: Get<FileEntry>;
+        readonly staticDirectory: Get<FileEntry>;
         readonly staticDistDirectory: Get<FileEntry>;
         readonly az: string;
         readonly docker: string;
