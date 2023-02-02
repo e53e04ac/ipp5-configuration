@@ -52,6 +52,29 @@ const constructor = ((options) => {
         get realm() {
             return _self.metadata().realm;
         },
+        directories: {
+            get tmpDirectory() {
+                return FileEntry(_self.metadata().tmpDirectory);
+            },
+            get backendApiDirectory() {
+                return FileEntry(_self.metadata().backendApiDirectory);
+            },
+            get backendBatchDirectory() {
+                return FileEntry(_self.metadata().backendBatchDirectory);
+            },
+            get backendIdpDirectory() {
+                return FileEntry(_self.metadata().backendIdpDirectory);
+            },
+            get backendStaticDirectory() {
+                return FileEntry(_self.metadata().backendStaticDirectory);
+            },
+            get staticDirectory() {
+                return FileEntry(_self.metadata().staticDirectory);
+            },
+            get staticDistDirectory() {
+                return FileEntry(_self.metadata().staticDistDirectory);
+            },
+        },
         urns: {
             get frontendUrn() {
                 return `urn:${self.realm}:frontned`;

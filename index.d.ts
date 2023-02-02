@@ -19,6 +19,13 @@ export declare namespace Ipp5Configuration {
         readonly az: string;
         readonly docker: string;
         readonly node: string;
+        readonly tmpDirectory: string;
+        readonly backendApiDirectory: string;
+        readonly backendBatchDirectory: string;
+        readonly backendIdpDirectory: string;
+        readonly backendStaticDirectory: string;
+        readonly staticDirectory: string;
+        readonly staticDistDirectory: string;
     };
 
     type Options = {
@@ -38,6 +45,15 @@ export declare namespace Ipp5Configuration {
         readonly docker: string;
         readonly node: string;
         readonly realm: string;
+        readonly directories: {
+            readonly tmpDirectory: FileEntry;
+            readonly backendApiDirectory: FileEntry;
+            readonly backendBatchDirectory: FileEntry;
+            readonly backendIdpDirectory: FileEntry;
+            readonly backendStaticDirectory: FileEntry;
+            readonly staticDirectory: FileEntry;
+            readonly staticDistDirectory: FileEntry;
+        };
         readonly urns: {
             readonly frontendUrn: string;
             readonly backendApiUrn: string;
