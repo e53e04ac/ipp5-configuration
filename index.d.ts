@@ -19,13 +19,6 @@ export declare namespace Ipp5Configuration {
         readonly az: string;
         readonly docker: string;
         readonly node: string;
-        readonly tmpDirectory: string;
-        readonly backendApiDirectory: string;
-        readonly backendBatchDirectory: string;
-        readonly backendIdpDirectory: string;
-        readonly backendStaticDirectory: string;
-        readonly staticDirectory: string;
-        readonly staticDistDirectory: string;
     };
 
     type Options = {
@@ -41,13 +34,6 @@ export declare namespace Ipp5Configuration {
 
     type Self = Base & {
         readonly _Ipp5Configuration: Get<_Self>;
-        readonly tmpDirectory: Get<FileEntry>;
-        readonly backendApiDirectory: Get<FileEntry>;
-        readonly backendBatchDirectory: Get<FileEntry>;
-        readonly backendIdpDirectory: Get<FileEntry>;
-        readonly backendStaticDirectory: Get<FileEntry>;
-        readonly staticDirectory: Get<FileEntry>;
-        readonly staticDistDirectory: Get<FileEntry>;
         readonly az: string;
         readonly docker: string;
         readonly node: string;

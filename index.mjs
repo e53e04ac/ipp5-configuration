@@ -40,27 +40,6 @@ const constructor = ((options) => {
         _Ipp5Configuration: (() => {
             return _self;
         }),
-        tmpDirectory: hold(() => {
-            return FileEntry(_self.metadata().tmpDirectory);
-        }),
-        backendApiDirectory: hold(() => {
-            return FileEntry(_self.metadata().backendApiDirectory);
-        }),
-        backendBatchDirectory: hold(() => {
-            return FileEntry(_self.metadata().backendBatchDirectory);
-        }),
-        backendIdpDirectory: hold(() => {
-            return FileEntry(_self.metadata().backendIdpDirectory);
-        }),
-        backendStaticDirectory: hold(() => {
-            return FileEntry(_self.metadata().backendStaticDirectory);
-        }),
-        staticDirectory: hold(() => {
-            return FileEntry(_self.metadata().staticDirectory);
-        }),
-        staticDistDirectory: hold(() => {
-            return FileEntry(_self.metadata().staticDistDirectory);
-        }),
         get az() {
             return _self.metadata().az;
         },
